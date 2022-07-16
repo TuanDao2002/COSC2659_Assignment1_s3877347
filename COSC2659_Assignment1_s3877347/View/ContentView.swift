@@ -28,15 +28,29 @@ struct ContentView: View {
         NavigationView {
             List(viewModel.data, id: \.id) { object in
                 HStack {
-                    Text("\(object.name) at \(object.location)")
+                    Image(object.image)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(height: 50)
+                    NavigationLink(object.name, destination: DetailView(data: object))
+                        .font(.system(size: 20))
+                        .padding()
+                        .minimumScaleFactor(0.01)
                 }
             }
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .principal) {
-                    Text("Universities in Vietnam")
-                        .font(.system(size: 30))
-                        .minimumScaleFactor(0.01)
+                    HStack {
+                        Image("uni_symbol")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(height: 35)
+                        Text("Universities in Vietnam")
+                            .font(.system(size: 30))
+                            .fontWeight(.bold)
+                            .minimumScaleFactor(0.01)
+                    }
                 }
             }
         }

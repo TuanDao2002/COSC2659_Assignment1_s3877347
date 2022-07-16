@@ -15,7 +15,8 @@ import SwiftUI
 
 class University: Identifiable, Decodable {
     var id: Int
+    var image: String
     var name: String
-    var location: String
+    var address: String
 }
 

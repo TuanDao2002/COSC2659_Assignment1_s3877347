@@ -1,25 +1,29 @@
 [
     {
         "id": 1,
-        "name": "RMIT",
-        "location": "district 7, HCM"
+        "name": "RMIT University (Saigon South Campus)",
+        "image": "rmit_logo",
+        "address": "district 7, HCM"
     },
     
     {
         "id": 2,
-        "name": "UEH",
-        "location": "district 5, HCM"
+        "name": "University of Economics Ho Chi Minh City",
+        "image": "ueh_logo",
+        "address": "district 5, HCM"
     },
     
     {
         "id": 3,
-        "name": "FTU",
-        "location": "district 5, HCM"
+        "name": "Foreign Trade University Ho Chi Minh City Campus",
+        "image": "ftu_logo",
+        "address": "district 5, HCM"
     },
     
     {
         "id": 4,
-        "name": "BKU",
-        "location": "district 5, HCM"
+        "name": "Ho Chi Minh City University of Technology",
+        "image": "bku_logo",
+        "address": "district 5, HCM"
     }
 ]

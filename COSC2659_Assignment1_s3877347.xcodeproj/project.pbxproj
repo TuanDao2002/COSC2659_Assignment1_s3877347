@@ -15,6 +15,7 @@
 		A4BFBD5B28826F63002E23A7 /* universityData.json in Resources */ = {isa = PBXBuildFile; fileRef = A4BFBD5A28826F63002E23A7 /* universityData.json */; };
 		A4BFBD6428827D50002E23A7 /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BFBD6328827D50002E23A7 /* JSONLoader.swift */; };
 		A4BFBD6B2882CC21002E23A7 /* UniversityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BFBD6A2882CC21002E23A7 /* UniversityViewModel.swift */; };
+		A4BFBD6D2882FF18002E23A7 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BFBD6C2882FF18002E23A7 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		A4BFBD5A28826F63002E23A7 /* universityData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = universityData.json; sourceTree = "<group>"; };
 		A4BFBD6328827D50002E23A7 /* JSONLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONLoader.swift; sourceTree = "<group>"; };
 		A4BFBD6A2882CC21002E23A7 /* UniversityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityViewModel.swift; sourceTree = "<group>"; };
+		A4BFBD6C2882FF18002E23A7 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 			children = (
 				A4512BF7288113350054054E /* ContentView.swift */,
 				A4512BF5288113350054054E /* App.swift */,
+				A4BFBD6C2882FF18002E23A7 /* DetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4512BF8288113350054054E /* ContentView.swift in Sources */,
+				A4BFBD6D2882FF18002E23A7 /* DetailView.swift in Sources */,
 				A4BFBD6B2882CC21002E23A7 /* UniversityViewModel.swift in Sources */,
 				A4512BF6288113350054054E /* App.swift in Sources */,
 				A4BFBD5628826A58002E23A7 /* University.swift in Sources */,
