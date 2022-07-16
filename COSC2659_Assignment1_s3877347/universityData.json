@@ -1,0 +1,19 @@
+[
+    {
+        "id": 1,
+        "name": "RMIT",
+        "location": "district 7, HCM"
+    },
+    
+    {
+        "id": 2,
+        "name": "UEH",
+        "location": "district 5, HCM"
+    },
+    
+    {
+        "id": 3,
+        "name": "FTU",
+        "location": "district 5, HCM"
+    },
+]

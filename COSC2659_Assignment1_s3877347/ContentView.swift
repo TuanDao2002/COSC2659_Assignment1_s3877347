@@ -9,8 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            List(UniversityModel.data, id: \.id) { object in
+                HStack {
+                    Text("\(object.name) at \(object.location)")
+                }
+            }
+            .navigationTitle("University Vietnam")
+        }
     }
 }
 
