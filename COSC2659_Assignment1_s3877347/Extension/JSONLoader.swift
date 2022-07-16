@@ -1,13 +1,22 @@
-//
-//  Bundle-Decodable.swift
-//  COSC2659_Assignment1_s3877347
-//
-//  Created by Tuan Dao on 16/07/2022.
-//
+/*
+  RMIT University Vietnam
+  Course: COSC2659 iOS Development
+  Semester: 2022B
+  Assessment: Assignment 1
+  Author: Dao Kha Tuan
+  ID: 3877347
+  Created  date: 16/07/2022
+  Last modified: 07/08/2022
+  Acknowledgement: None
+*/
 
 import Foundation
+
+/*
+ Create an extension for Bundle class to add a
+ */
 extension Bundle {
-    func load<T: Decodable>(_ filename: String) -> T {
+    func loadJSONFrom<T: Decodable>(_ filename: String) -> T {
         let data: Data
 
         guard let file = Bundle.main.url(forResource: filename, withExtension: nil)

@@ -16,4 +16,10 @@
         "name": "FTU",
         "location": "district 5, HCM"
     },
+    
+    {
+        "id": 4,
+        "name": "BKU",
+        "location": "district 5, HCM"
+    }
 ]
