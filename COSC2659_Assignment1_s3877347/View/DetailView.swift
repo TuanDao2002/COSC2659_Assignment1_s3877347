@@ -14,7 +14,6 @@ import SwiftUI
 
 struct DetailView: View {
     var data: University
-    @Environment(\.presentationMode) var mode: Binding<PresentationMode>
 
     var body: some View {
         ScrollView {
