@@ -14,6 +14,8 @@ import SwiftUI
 
 struct DetailView: View {
     var data: University
+    @Environment(\.presentationMode) var mode: Binding<PresentationMode>
+
     var body: some View {
         ScrollView {
                 VStack {
@@ -48,7 +50,16 @@ struct DetailView: View {
                     .padding()
                 }
         }
-        .ignoresSafeArea(edges: .top)
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .principal) {
+                VStack {
+                    Text(data.title)
+                        .font(.title)
+                        .padding(8)
+                }
+            }
+        }
     }
 }
 

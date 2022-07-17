@@ -17,6 +17,7 @@ class University: Identifiable, Decodable {
     var id: Int
     var image: String
     var name: String
+    var title: String
     var address: String
     var description: String
     var latitude: Double

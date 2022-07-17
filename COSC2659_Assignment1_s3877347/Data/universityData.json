@@ -2,9 +2,10 @@
     {
         "id": 1,
         "name": "RMIT University (Saigon South Campus)",
+        "title": "RMIT",
         "image": "rmit_logo",
         "address": "702 Nguyen Van Linh, Tan Hung, Distric 7, Ho Chi Minh City",
-        "description": "RMIT University Vietnam (informally RMIT Vietnam or RMIT) is the Vietnamese branch of the Australian research university the Royal Melbourne Institute of Technology, known in Australia as RMIT University. It has three campuses located in Ho Chi Minh City, Hanoi and Danang.\nRMIT was the first completely foreign-owned university granted permission to operate in Vietnam. Since its establishment in 2000, it has won 17 Golden Dragon Awards from the Vietnamese Government for excellence in education",
+        "description": "RMIT University Vietnam (informally RMIT Vietnam or RMIT) is the Vietnamese branch of the Australian research university the Royal Melbourne Institute of Technology, known in Australia as RMIT University. It has three campuses located in Ho Chi Minh City, Hanoi and Danang.\n\nRMIT was the first completely foreign-owned university granted permission to operate in Vietnam. Since its establishment in 2000, it has won 17 Golden Dragon Awards from the Vietnamese Government for excellence in education",
         "latitude": 10.729444,
         "longitude": 106.695278
     },
@@ -12,6 +13,7 @@
     {
         "id": 2,
         "name": "University of Economics Ho Chi Minh City",
+        "title": "UEH",
         "image": "ueh_logo",
         "address": "district 5, HCM",
         "description": "Describe here",
@@ -22,6 +24,7 @@
     {
         "id": 3,
         "name": "Foreign Trade University Ho Chi Minh City Campus",
+        "title": "FTU",
         "image": "ftu_logo",
         "address": "district 5, HCM",
         "description": "Describe here",
@@ -32,10 +35,88 @@
     {
         "id": 4,
         "name": "Ho Chi Minh City University of Technology",
+        "title": "BKU",
         "image": "bku_logo",
         "address": "district 5, HCM",
         "description": "Describe here",
         "latitude": 10.729444,
         "longitude": 106.695278
-    }
+    },
+    
+    {
+        "id": 5,
+        "name": "Foreign Trade University Ho Chi Minh City Campus",
+        "title": "FTU",
+        "image": "ftu_logo",
+        "address": "district 5, HCM",
+        "description": "Describe here",
+        "latitude": 10.729444,
+        "longitude": 106.695278
+    },
+    
+    {
+        "id": 6,
+        "name": "Foreign Trade University Ho Chi Minh City Campus",
+        "title": "FTU",
+        "image": "ftu_logo",
+        "address": "district 5, HCM",
+        "description": "Describe here",
+        "latitude": 10.729444,
+        "longitude": 106.695278
+    },
+    
+    {
+        "id": 7,
+        "name": "Foreign Trade University Ho Chi Minh City Campus",
+        "title": "FTU",
+        "image": "ftu_logo",
+        "address": "district 5, HCM",
+        "description": "Describe here",
+        "latitude": 10.729444,
+        "longitude": 106.695278
+    },
+    
+    {
+        "id": 8,
+        "name": "Foreign Trade University Ho Chi Minh City Campus",
+        "title": "FTU",
+        "image": "ftu_logo",
+        "address": "district 5, HCM",
+        "description": "Describe here",
+        "latitude": 10.729444,
+        "longitude": 106.695278
+    },
+    
+    {
+        "id": 9,
+        "name": "Foreign Trade University Ho Chi Minh City Campus",
+        "title": "FTU",
+        "image": "ftu_logo",
+        "address": "district 5, HCM",
+        "description": "Describe here",
+        "latitude": 10.729444,
+        "longitude": 106.695278
+    },
+    
+    {
+        "id": 10,
+        "name": "Foreign Trade University Ho Chi Minh City Campus",
+        "title": "FTU",
+        "image": "ftu_logo",
+        "address": "district 5, HCM",
+        "description": "Describe here",
+        "latitude": 10.729444,
+        "longitude": 106.695278
+    },
+    
+    {
+        "id": 12,
+        "name": "Foreign Trade University Ho Chi Minh City Campus",
+        "title": "FTU",
+        "image": "ftu_logo",
+        "address": "district 5, HCM",
+        "description": "Describe here",
+        "latitude": 10.729444,
+        "longitude": 106.695278
+    },
 ]
