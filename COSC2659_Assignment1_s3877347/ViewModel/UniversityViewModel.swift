@@ -12,15 +12,30 @@
 
 import Foundation
 
-class UniversityViewModel: NSObject {
-    public var data: [University]!
+final class UniversityViewModel: ObservableObject {
+    @Published var data: [University] = []
     
-    override init() {
-        super.init()
+    init() {
         load()
     }
     
     func load() {
         self.data = Bundle.main.loadJSONFrom("universityData.json")
+    }
+    
+    func filter(searchText: String) -> [University] {
+        if searchText.count > 1 {
+            var matchingUniversities: [University] = []
+            for university in data {
+                let content = university.name + university.address + university.title
+                if content.lowercased().contains(searchText.lowercased()) {
+                    matchingUniversities.append(university)
+                }
+            }
+            
+            return matchingUniversities
+        } else {
+            return data
+        }
     }
 }

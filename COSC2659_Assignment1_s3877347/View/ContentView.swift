@@ -23,37 +23,49 @@ extension View {
 }
 
 struct ContentView: View {
+    @EnvironmentObject var universityVM: UniversityViewModel
+    var filteredUni: [University] {
+        if queryString.isEmpty {
+            return universityVM.data
+        } else {
+            return universityVM.filter(searchText: queryString)
+        }
+    }
+    
+    @State private var queryString = ""
     var body: some View {
-        let viewModel = UniversityViewModel()
         NavigationView {
-            List(viewModel.data, id: \.id) { object in
-                HStack {
-                    Image(object.image)
-                        .resizable()
-                        .scaledToFit()
-                        .frame(height: 50)
-                    NavigationLink(object.name, destination: DetailView(data: object))
-                        .font(.system(size: 20))
-                        .padding(8)
-                        .minimumScaleFactor(0.01)
-                }
-            }
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .principal) {
+            VStack {
+                List(filteredUni, id: \.id) { object in
                     HStack {
-                        Image("uni_symbol")
+                        Image(object.image)
                             .resizable()
                             .scaledToFit()
-                            .frame(height: 35)
-                        Text("Universities in Vietnam")
-                            .font(.system(size: 30))
-                            .fontWeight(.bold)
+                            .frame(height: 50)
+                        NavigationLink(object.name, destination: DetailView(data: object))
+                            .font(.system(size: 20))
+                            .padding(8)
                             .minimumScaleFactor(0.01)
+                    }
+                }
+                .navigationBarTitleDisplayMode(.inline)
+                .toolbar {
+                    ToolbarItem(placement: .principal) {
+                        HStack {
+                            Image("uni_symbol")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(height: 35)
+                            Text("Universities in Vietnam")
+                                .font(.system(size: 30))
+                                .fontWeight(.bold)
+                                .minimumScaleFactor(0.01)
+                        }
                     }
                 }
             }
         }
+        .searchable(text: $queryString)
         .phoneOnlyStackNavigationView()
     }
 }
@@ -61,6 +73,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .previewInterfaceOrientation(.portrait)
+            .environmentObject(UniversityViewModel())
     }
 }

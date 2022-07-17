@@ -13,9 +13,11 @@ import SwiftUI
 
 @main
 struct COSC2659_Assignment1_s3877347App: App {
+    var universityVM = UniversityViewModel()
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(universityVM)
         }
     }
 }
