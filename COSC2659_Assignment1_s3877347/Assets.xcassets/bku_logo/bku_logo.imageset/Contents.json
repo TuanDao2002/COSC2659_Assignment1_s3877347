@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "ueh_logo.png",
+      "filename" : "bku_logo.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "bku_logo@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "bku_logo@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

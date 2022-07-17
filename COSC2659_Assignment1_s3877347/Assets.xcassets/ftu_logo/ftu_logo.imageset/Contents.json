@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "bku_logo.png",
+      "filename" : "ftu_logo.jpeg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "ftu_logo@2x.jpeg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "ftu_logo@3x.jpeg",
       "idiom" : "universal",
       "scale" : "3x"
     }

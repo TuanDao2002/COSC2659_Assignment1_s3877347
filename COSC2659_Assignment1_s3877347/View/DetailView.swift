@@ -15,10 +15,40 @@ import SwiftUI
 struct DetailView: View {
     var data: University
     var body: some View {
-        VStack(alignment: .leading) {
-            Text("Name: \(data.name)")
-            Text("Address: \(data.address)")
+        ScrollView {
+                VStack {
+                    MapView(name: data.name, latitude: data.latitude, longitude: data.longitude)
+                        .frame(height: 300)
+
+                    CircleImage(image: data.image)
+                        .offset(y: -90)
+                        .padding(.bottom, -90)
+
+                    VStack(alignment: .leading) {
+                        Text(data.name)
+                            .fixedSize(horizontal: false, vertical: true)
+                            .font(.title)
+
+                        HStack {
+                            Text(data.address)
+                            Spacer()
+                        }
+                        .font(.subheadline)
+                        .foregroundColor(.secondary)
+
+                        Divider()
+
+                        Text("About \(data.name)")
+                            .fixedSize(horizontal: false, vertical: true)
+                            .font(.system( size: 20, weight: .medium))
+                        Text(data.description)
+                            .font(.system(size: 20))
+                            .multilineTextAlignment(.leading)
+                    }
+                    .padding()
+                }
         }
+        .ignoresSafeArea(edges: .top)
     }
 }
 

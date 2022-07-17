@@ -16,8 +16,8 @@ extension View {
     @ViewBuilder func phoneOnlyStackNavigationView() -> some View {
         if UIDevice.current.userInterfaceIdiom == .phone {
             self.navigationViewStyle(.stack)
-        } else {
-            self
+        } else if UIDevice.current.userInterfaceIdiom == .pad {
+            self.navigationViewStyle(.stack)
         }
     }
 }
@@ -34,7 +34,7 @@ struct ContentView: View {
                         .frame(height: 50)
                     NavigationLink(object.name, destination: DetailView(data: object))
                         .font(.system(size: 20))
-                        .padding()
+                        .padding(8)
                         .minimumScaleFactor(0.01)
                 }
             }
@@ -61,5 +61,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .previewInterfaceOrientation(.portrait)
     }
 }

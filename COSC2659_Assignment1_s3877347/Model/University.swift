@@ -18,5 +18,8 @@ class University: Identifiable, Decodable {
     var image: String
     var name: String
     var address: String
+    var description: String
+    var latitude: Double
+    var longitude: Double
 }
 

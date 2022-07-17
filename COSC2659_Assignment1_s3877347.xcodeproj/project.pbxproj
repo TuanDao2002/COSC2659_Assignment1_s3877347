@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A400DDB02883B631003B7BA6 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A400DDAF2883B631003B7BA6 /* CircleImage.swift */; };
+		A400DDB22883B706003B7BA6 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A400DDB12883B706003B7BA6 /* MapView.swift */; };
 		A4512BF6288113350054054E /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4512BF5288113350054054E /* App.swift */; };
 		A4512BF8288113350054054E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4512BF7288113350054054E /* ContentView.swift */; };
 		A4512BFA288113370054054E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4512BF9288113370054054E /* Assets.xcassets */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A400DDAF2883B631003B7BA6 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		A400DDB12883B706003B7BA6 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		A4512BF2288113350054054E /* COSC2659_Assignment1_s3877347.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = COSC2659_Assignment1_s3877347.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4512BF5288113350054054E /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		A4512BF7288113350054054E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -94,6 +98,8 @@
 				A4512BF7288113350054054E /* ContentView.swift */,
 				A4512BF5288113350054054E /* App.swift */,
 				A4BFBD6C2882FF18002E23A7 /* DetailView.swift */,
+				A400DDAF2883B631003B7BA6 /* CircleImage.swift */,
+				A400DDB12883B706003B7BA6 /* MapView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -194,8 +200,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4512BF8288113350054054E /* ContentView.swift in Sources */,
+				A400DDB22883B706003B7BA6 /* MapView.swift in Sources */,
 				A4BFBD6D2882FF18002E23A7 /* DetailView.swift in Sources */,
 				A4BFBD6B2882CC21002E23A7 /* UniversityViewModel.swift in Sources */,
+				A400DDB02883B631003B7BA6 /* CircleImage.swift in Sources */,
 				A4512BF6288113350054054E /* App.swift in Sources */,
 				A4BFBD5628826A58002E23A7 /* University.swift in Sources */,
 				A4BFBD6428827D50002E23A7 /* JSONLoader.swift in Sources */,
