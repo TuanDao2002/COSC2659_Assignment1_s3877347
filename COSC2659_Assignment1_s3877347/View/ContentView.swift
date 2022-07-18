@@ -26,34 +26,30 @@ extension View {
 struct ContentView: View {
     @EnvironmentObject var universityVM: UniversityViewModel
     @State private var queryString = ""
-    @State var isPopoverShowing = false
-
     @State private var selection = "name"
-    let options = ["name", "title", "description"]
+    let options = ["name", "title", "address"]
     
     var filteredUni: [University] {
         if queryString.isEmpty {
             return universityVM.data
         } else {
-            return universityVM.filter(searchText: queryString)
+            return universityVM.filter(searchText: queryString, option: selection)
         }
     }
     
     var body: some View {
         NavigationView {
             VStack {
-//                    Text("Filter by")
-//                        .font(.title3)
+                Text("Filter by")
+                    .font(.subheadline)
                 Picker("filter option", selection: $selection) {
                     ForEach(options, id: \.self) {
                         Text("\($0)")
-                            .font(.system(size: 30))
                     }
                 }
-                .pickerStyle(MenuPickerStyle())
-                .frame(maxWidth: .infinity, alignment: .trailing)
-                .padding(.trailing, 25)
-
+                .padding(.horizontal)
+                .pickerStyle(.segmented)
+                
                 List(filteredUni, id: \.id) { object in
                     HStack {
                         Image(object.image)
@@ -66,12 +62,18 @@ struct ContentView: View {
                             .minimumScaleFactor(0.01)
                     }
                 }
-                .searchable(text: $queryString, prompt: "Enter keyword")
-
+                .searchable(text: $queryString, prompt: "Enter keyword") {
+                    ForEach(filteredUni, id: \.id) { result in
+                        if selection == "address" {
+                            Text("\(result.address)").searchCompletion(result.address)
+                        } else if selection == "name" {
+                            Text("\(result.name)").searchCompletion(result.name)
+                        } else if selection == "title" {
+                            Text("\(result.title)").searchCompletion(result.title)
+                        }
+                    }
+                }
                 .navigationTitle("🏫 in Vietnam")
-                .minimumScaleFactor(0.01)
-                
-//                .navigationBarTitleDisplayMode(.inline)
             }
         }
 

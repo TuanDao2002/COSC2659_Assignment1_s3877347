@@ -23,11 +23,19 @@ final class UniversityViewModel: ObservableObject {
         self.data = Bundle.main.loadJSONFrom("universityData.json")
     }
     
-    func filter(searchText: String) -> [University] {
-        if searchText.count > 1 {
+    func filter(searchText: String, option: String) -> [University] {
+        if searchText.count >= 1 {
             var matchingUniversities: [University] = []
             for university in data {
-                let content = university.name + university.address + university.title
+                var content = ""
+                if option == "name" {
+                    content = university.name
+                } else if option == "title" {
+                    content = university.title
+                } else if option == "address" {
+                    content = university.address
+                }
+                
                 if content.lowercased().contains(searchText.lowercased()) {
                     matchingUniversities.append(university)
                 }
