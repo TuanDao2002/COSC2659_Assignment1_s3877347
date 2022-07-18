@@ -11,6 +11,7 @@
 */
 
 import SwiftUI
+import MapKit
 
 extension View {
     @ViewBuilder func phoneOnlyStackNavigationView() -> some View {
@@ -41,6 +42,18 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
+//                    Text("Filter by")
+//                        .font(.title3)
+                Picker("filter option", selection: $selection) {
+                    ForEach(options, id: \.self) {
+                        Text("\($0)")
+                            .font(.system(size: 30))
+                    }
+                }
+                .pickerStyle(MenuPickerStyle())
+                .frame(maxWidth: .infinity, alignment: .trailing)
+                .padding(.trailing, 25)
+
                 List(filteredUni, id: \.id) { object in
                     HStack {
                         Image(object.image)
@@ -53,42 +66,16 @@ struct ContentView: View {
                             .minimumScaleFactor(0.01)
                     }
                 }
-                .navigationBarTitleDisplayMode(.inline)
-                .toolbar {
-                    ToolbarItem(placement: .principal) {
-                        HStack {
-                            Image("uni_symbol")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(height: 35)
-                            Text("Universities in Vietnam")
-                                .font(.system(size: 30))
-                                .fontWeight(.bold)
-                                .minimumScaleFactor(0.01)
-                        }
-                    }
-                }
-                
-                Button("Filter") {
-                    isPopoverShowing = true
-                }
-                .sheet(isPresented: $isPopoverShowing) {
-                    VStack {
-                        Picker("Select filter option", selection: $selection) {
-                            ForEach(options, id: \.self) {
-                                Text($0)
-                            }
-                        }
-                        .pickerStyle(.menu)
+                .searchable(text: $queryString, prompt: "Enter keyword")
 
-                        Text("Selected option: \(selection)")
-                    }
-                    
-                }
+                .navigationTitle("🏫 in Vietnam")
+                .minimumScaleFactor(0.01)
+                
+//                .navigationBarTitleDisplayMode(.inline)
             }
         }
-        .searchable(text: $queryString, prompt: "Enter keyword")
-        .phoneOnlyStackNavigationView()
+
+//        .phoneOnlyStackNavigationView()
     }
 }
 
