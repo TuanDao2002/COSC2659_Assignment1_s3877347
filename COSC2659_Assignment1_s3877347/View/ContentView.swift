@@ -24,6 +24,12 @@ extension View {
 
 struct ContentView: View {
     @EnvironmentObject var universityVM: UniversityViewModel
+    @State private var queryString = ""
+    @State var isPopoverShowing = false
+
+    @State private var selection = "name"
+    let options = ["name", "title", "description"]
+    
     var filteredUni: [University] {
         if queryString.isEmpty {
             return universityVM.data
@@ -32,7 +38,6 @@ struct ContentView: View {
         }
     }
     
-    @State private var queryString = ""
     var body: some View {
         NavigationView {
             VStack {
@@ -63,9 +68,26 @@ struct ContentView: View {
                         }
                     }
                 }
+                
+                Button("Filter") {
+                    isPopoverShowing = true
+                }
+                .sheet(isPresented: $isPopoverShowing) {
+                    VStack {
+                        Picker("Select filter option", selection: $selection) {
+                            ForEach(options, id: \.self) {
+                                Text($0)
+                            }
+                        }
+                        .pickerStyle(.menu)
+
+                        Text("Selected option: \(selection)")
+                    }
+                    
+                }
             }
         }
-        .searchable(text: $queryString)
+        .searchable(text: $queryString, prompt: "Enter keyword")
         .phoneOnlyStackNavigationView()
     }
 }
