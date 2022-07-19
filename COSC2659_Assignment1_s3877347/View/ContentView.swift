@@ -27,7 +27,7 @@ struct ContentView: View {
     @EnvironmentObject var universityVM: UniversityViewModel
     @State private var queryString = ""
     @State private var selection = "name"
-    let options = ["name", "address", "fee"]
+    let options = ["name", "address", "fee (millions/year)"]
     
     var filteredUni: [University] {
         if queryString.isEmpty {
@@ -59,7 +59,7 @@ struct ContentView: View {
                         Text("\($0)")
                     }
                 }
-                .padding(.horizontal)
+                .padding(.horizontal, 5)
                 .pickerStyle(.segmented)
                 
                 List(filteredUni, id: \.id) { object in

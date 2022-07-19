@@ -30,12 +30,21 @@ final class UniversityViewModel: ObservableObject {
                 var content = ""
                 if option == "name" {
                     content = university.name
-                } else if option == "title" {
-                    content = university.title
                 } else if option == "address" {
                     content = university.address
                 }
                 
+                if option == "fee (millions/year)" {
+//                    var fee = 0
+                    if let fee = Double(searchText) {
+                        if university.annualTuitionFee <= fee {
+                            matchingUniversities.append(university)
+                            continue
+                        }
+                    } else {
+                        return data
+                    }
+                }
                 if content.lowercased().contains(searchText.lowercased()) {
                     matchingUniversities.append(university)
                 }
