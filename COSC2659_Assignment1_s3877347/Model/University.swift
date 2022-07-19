@@ -19,6 +19,7 @@ class University: Identifiable, Decodable {
     var name: String
     var title: String
     var address: String
+    var annualTuitionFee: Double
     var description: String
     var latitude: Double
     var longitude: Double

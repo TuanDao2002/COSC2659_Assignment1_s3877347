@@ -27,13 +27,25 @@ struct ContentView: View {
     @EnvironmentObject var universityVM: UniversityViewModel
     @State private var queryString = ""
     @State private var selection = "name"
-    let options = ["name", "title", "address"]
+    let options = ["name", "address", "fee"]
     
     var filteredUni: [University] {
         if queryString.isEmpty {
             return universityVM.data
         } else {
             return universityVM.filter(searchText: queryString, option: selection)
+        }
+    }
+    
+    var prompText: String {
+        if selection == "name" {
+            return "Enter name keyword"
+        } else if selection == "address" {
+            return "Enter address keyword"
+        } else if selection == "fee" {
+            return "Enter max annual tuition fee"
+        } else {
+            return "Enter keyword"
         }
     }
     
@@ -62,14 +74,10 @@ struct ContentView: View {
                             .minimumScaleFactor(0.01)
                     }
                 }
-                .searchable(text: $queryString, prompt: "Enter keyword") {
+                .searchable(text: $queryString, prompt: prompText) {
                     ForEach(filteredUni, id: \.id) { result in
-                        if selection == "address" {
-                            Text("\(result.address)").searchCompletion(result.address)
-                        } else if selection == "name" {
+                        if selection == "name" {
                             Text("\(result.name)").searchCompletion(result.name)
-                        } else if selection == "title" {
-                            Text("\(result.title)").searchCompletion(result.title)
                         }
                     }
                 }

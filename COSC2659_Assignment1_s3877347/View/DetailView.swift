@@ -14,8 +14,9 @@ import SwiftUI
 
 struct DetailView: View {
     var data: University
-
+    
     var body: some View {
+        let rounded = String(format: "%.3f", data.annualTuitionFee)
         ScrollView {
                 VStack {
                     MapView(name: data.name, latitude: data.latitude, longitude: data.longitude)
@@ -30,14 +31,18 @@ struct DetailView: View {
                             .fixedSize(horizontal: false, vertical: true)
                             .font(.title)
 
-                        HStack {
-                            Text(data.address)
+                        HStack (alignment: .top) {
+                            Text("Address: \(data.address)")
+                                .font(.subheadline)
                             Spacer()
+                            Divider()
+                                .frame(width: 0.5)
+                                .overlay(.black)
+                            Text("Annual tuition fee: \(rounded)M VND")
+                                .font(.subheadline)
                         }
                         .font(.subheadline)
                         .foregroundColor(.secondary)
-
-                        Divider()
 
                         Text("About \(data.name)")
                             .fixedSize(horizontal: false, vertical: true)
