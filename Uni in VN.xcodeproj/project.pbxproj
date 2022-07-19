@@ -25,7 +25,7 @@
 		A400DDAF2883B631003B7BA6 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		A400DDB12883B706003B7BA6 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		A42049F62886914E00356E9F /* UniversityRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityRow.swift; sourceTree = "<group>"; };
-		A4512BF2288113350054054E /* COSC2659_Assignment1_s3877347.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = COSC2659_Assignment1_s3877347.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4512BF2288113350054054E /* Uni in VN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Uni in VN.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4512BF5288113350054054E /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		A4512BF7288113350054054E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A4512BF9288113370054054E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,7 +59,7 @@
 		A4512BF3288113350054054E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A4512BF2288113350054054E /* COSC2659_Assignment1_s3877347.app */,
+				A4512BF2288113350054054E /* Uni in VN.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -134,9 +134,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A4512BF1288113350054054E /* COSC2659_Assignment1_s3877347 */ = {
+		A4512BF1288113350054054E /* Uni in VN */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A4512C00288113370054054E /* Build configuration list for PBXNativeTarget "COSC2659_Assignment1_s3877347" */;
+			buildConfigurationList = A4512C00288113370054054E /* Build configuration list for PBXNativeTarget "Uni in VN" */;
 			buildPhases = (
 				A4512BEE288113350054054E /* Sources */,
 				A4512BEF288113350054054E /* Frameworks */,
@@ -146,9 +146,9 @@
 			);
 			dependencies = (
 			);
-			name = COSC2659_Assignment1_s3877347;
+			name = "Uni in VN";
 			productName = COSC2659_Assignment1_s3877347;
-			productReference = A4512BF2288113350054054E /* COSC2659_Assignment1_s3877347.app */;
+			productReference = A4512BF2288113350054054E /* Uni in VN.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -166,7 +166,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A4512BED288113350054054E /* Build configuration list for PBXProject "COSC2659_Assignment1_s3877347" */;
+			buildConfigurationList = A4512BED288113350054054E /* Build configuration list for PBXProject "Uni in VN" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -179,7 +179,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A4512BF1288113350054054E /* COSC2659_Assignment1_s3877347 */,
+				A4512BF1288113350054054E /* Uni in VN */,
 			);
 		};
 /* End PBXProject section */
@@ -353,7 +353,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.khatun.COSC2659-Assignment1-s3877347";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Uni in VN";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -382,7 +382,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.khatun.COSC2659-Assignment1-s3877347";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Universities in Vietnam";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -392,7 +392,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A4512BED288113350054054E /* Build configuration list for PBXProject "COSC2659_Assignment1_s3877347" */ = {
+		A4512BED288113350054054E /* Build configuration list for PBXProject "Uni in VN" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A4512BFE288113370054054E /* Debug */,
@@ -401,7 +401,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A4512C00288113370054054E /* Build configuration list for PBXNativeTarget "COSC2659_Assignment1_s3877347" */ = {
+		A4512C00288113370054054E /* Build configuration list for PBXNativeTarget "Uni in VN" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A4512C01288113370054054E /* Debug */,
