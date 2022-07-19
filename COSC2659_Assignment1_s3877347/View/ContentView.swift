@@ -63,16 +63,7 @@ struct ContentView: View {
                 .pickerStyle(.segmented)
                 
                 List(filteredUni, id: \.id) { object in
-                    HStack {
-                        Image(object.image)
-                            .resizable()
-                            .scaledToFit()
-                            .frame(height: 50)
-                        NavigationLink(object.name, destination: DetailView(data: object))
-                            .font(.system(size: 20))
-                            .padding(8)
-                            .minimumScaleFactor(0.01)
-                    }
+                    UniversityRow(object: object)
                 }
                 .searchable(text: $queryString, prompt: prompText) {
                     ForEach(filteredUni, id: \.id) { result in
