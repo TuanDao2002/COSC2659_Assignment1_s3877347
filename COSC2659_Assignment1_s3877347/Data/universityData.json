@@ -4,10 +4,10 @@
         "name": "RMIT University (Saigon South Campus)",
         "title": "RMIT",
         "image": "rmit_logo",
-        "address": "702 Nguyen Van Linh, Tan Hung, District 7, Ho Chi Minh City",
+        "address": "702 Nguyen Van Linh, Tan Hung Ward, District 7, Ho Chi Minh City",
         "annualTuitionFee": 300.596,
         "description": "RMIT University Vietnam (informally RMIT Vietnam or RMIT) is the Vietnamese branch of the Australian research university the Royal Melbourne Institute of Technology, known in Australia as RMIT University. It has three campuses located in Ho Chi Minh City, Hanoi and Danang.\n\nRMIT was the first completely foreign-owned university granted permission to operate in Vietnam. Since its establishment in 2000, it has won 17 Golden Dragon Awards from the Vietnamese Government for excellence in education",
-        "imageSlides": ["RMIT - SGS Campus", "Melbourne Theatre", "Beanland library", "Computer Lab", "RMIT Canteen"],
+        "imageSlides": ["RMIT - SGS Campus", "Melbourne Theatre", "Beanland library", "RMIT Computer Lab", "RMIT Canteen"],
         "latitude": 10.729444,
         "longitude": 106.695278
     },
@@ -17,12 +17,12 @@
         "name": "University of Economics Ho Chi Minh City",
         "title": "UEH",
         "image": "ueh_logo",
-        "address": "district 5, HCM",
+        "address": "59C Nguyen Dinh Chieu, Ward 6, District 3, Ho Chi Minh City",
         "annualTuitionFee": 300.596,
-        "description": "Describe here",
-        "imageSlides": ["Melbourne Theatre", "bku_logo", "bku_logo"],
-        "latitude": 10.729444,
-        "longitude": 106.695278
+        "description": "University of Economics Ho Chi Minh City (UEH University) is a multidisciplinary university which was established in 1976 in Ho Chi Minh City, Vietnam. It is one of the National Key Universities of Vietnam and is a member of The Best 1,000 Business Schools in the World.\n\nFrom its inception until now, the school has been a renowned center of scientific research in Vietnam, providing undergraduate and postgraduate education for students from the country and neighboring Laos and Cambodia",
+        "imageSlides": ["UEH - Campus A", "UEH Theatre", "UEH library", "UEH Computer Lab", "UEH Canteen"],
+        "latitude": 10.78333219823242,
+        "longitude": 106.69474339698843
     },
     
     {
@@ -33,7 +33,7 @@
         "address": "district 5, HCM",
         "annualTuitionFee": 300.596,
         "description": "Describe here",
-        "imageSlides": ["Melbourne Theatre", "bku_logo", "bku_logo"],
+        "imageSlides": ["Melbourne Theatre", "bku_logo"],
         "latitude": 10.729444,
         "longitude": 106.695278
     },
@@ -46,7 +46,7 @@
         "address": "district 5, HCM",
         "annualTuitionFee": 300.596,
         "description": "Describe here",
-        "imageSlides": ["Melbourne Theatre", "bku_logo", "bku_logo"],
+        "imageSlides": ["Melbourne Theatre", "bku_logo"],
         "latitude": 10.729444,
         "longitude": 106.695278
     }

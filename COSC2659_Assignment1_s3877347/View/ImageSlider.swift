@@ -10,11 +10,6 @@ import SwiftUI
 struct ImageSlider: View {
     let images: [String];
     var body: some View {
-//        NavigationView {
-//            List {
-//
-//            }
-//        }
         Group {
             TabView {
                 ForEach(images, id: \.self) { imageName in
@@ -34,6 +29,6 @@ struct ImageSlider: View {
 
 struct ImageSlider_Previews: PreviewProvider {
     static var previews: some View {
-        ImageSlider(images: ["Melbourne Theatre", "bku_logo", "bku_logo"])
+        ImageSlider(images: ["Melbourne Theatre", "bku_logo"])
     }
 }
