@@ -34,7 +34,7 @@ final class UniversityViewModel: ObservableObject {
                     content = university.address
                 }
                 
-                if option == "fee (millions/year)" {
+                if option == "fee" {
                     if let fee = Double(searchText) {
                         if university.annualTuitionFee <= fee {
                             matchingUniversities.append(university)

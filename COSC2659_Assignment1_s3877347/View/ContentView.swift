@@ -27,7 +27,7 @@ struct ContentView: View {
     @EnvironmentObject var universityVM: UniversityViewModel
     @State private var queryString = ""
     @State private var selection = "name"
-    let options = ["name", "address", "fee (millions/year)"]
+    let options = ["name", "address", "fee"]
     
     var filteredUni: [University] {
         if queryString.isEmpty {
@@ -39,11 +39,11 @@ struct ContentView: View {
     
     var prompText: String {
         if selection == "name" {
-            return "Enter name keyword"
+            return "Keyword for name"
         } else if selection == "address" {
-            return "Enter address keyword"
+            return "Key word for address"
         } else if selection == "fee" {
-            return "Enter max annual tuition fee"
+            return "Max tuition fee (millions VND/year)"
         } else {
             return "Enter keyword"
         }
@@ -76,7 +76,7 @@ struct ContentView: View {
             }
         }
 
-//        .phoneOnlyStackNavigationView()
+        .phoneOnlyStackNavigationView()
     }
 }
 

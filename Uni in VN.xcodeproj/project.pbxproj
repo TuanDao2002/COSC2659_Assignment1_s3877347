@@ -14,6 +14,8 @@
 		A4512BF8288113350054054E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4512BF7288113350054054E /* ContentView.swift */; };
 		A4512BFA288113370054054E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4512BF9288113370054054E /* Assets.xcassets */; };
 		A4512BFD288113370054054E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4512BFC288113370054054E /* Preview Assets.xcassets */; };
+		A45F9CA52887B8F6008F5698 /* ImageSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45F9CA42887B8F6008F5698 /* ImageSlider.swift */; };
+		A45F9CA72887CB59008F5698 /* ImageOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45F9CA62887CB59008F5698 /* ImageOverlay.swift */; };
 		A4BFBD5628826A58002E23A7 /* University.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BFBD5528826A58002E23A7 /* University.swift */; };
 		A4BFBD5B28826F63002E23A7 /* universityData.json in Resources */ = {isa = PBXBuildFile; fileRef = A4BFBD5A28826F63002E23A7 /* universityData.json */; };
 		A4BFBD6428827D50002E23A7 /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BFBD6328827D50002E23A7 /* JSONLoader.swift */; };
@@ -30,6 +32,8 @@
 		A4512BF7288113350054054E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A4512BF9288113370054054E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4512BFC288113370054054E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A45F9CA42887B8F6008F5698 /* ImageSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSlider.swift; sourceTree = "<group>"; };
+		A45F9CA62887CB59008F5698 /* ImageOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageOverlay.swift; sourceTree = "<group>"; };
 		A4BFBD5528826A58002E23A7 /* University.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = University.swift; sourceTree = "<group>"; };
 		A4BFBD5A28826F63002E23A7 /* universityData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = universityData.json; sourceTree = "<group>"; };
 		A4BFBD6328827D50002E23A7 /* JSONLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONLoader.swift; sourceTree = "<group>"; };
@@ -98,11 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				A4512BF7288113350054054E /* ContentView.swift */,
+				A45F9CA62887CB59008F5698 /* ImageOverlay.swift */,
 				A4512BF5288113350054054E /* App.swift */,
 				A4BFBD6C2882FF18002E23A7 /* DetailView.swift */,
 				A400DDAF2883B631003B7BA6 /* CircleImage.swift */,
 				A400DDB12883B706003B7BA6 /* MapView.swift */,
 				A42049F62886914E00356E9F /* UniversityRow.swift */,
+				A45F9CA42887B8F6008F5698 /* ImageSlider.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -207,7 +213,9 @@
 				A400DDB22883B706003B7BA6 /* MapView.swift in Sources */,
 				A4BFBD6D2882FF18002E23A7 /* DetailView.swift in Sources */,
 				A4BFBD6B2882CC21002E23A7 /* UniversityViewModel.swift in Sources */,
+				A45F9CA72887CB59008F5698 /* ImageOverlay.swift in Sources */,
 				A400DDB02883B631003B7BA6 /* CircleImage.swift in Sources */,
+				A45F9CA52887B8F6008F5698 /* ImageSlider.swift in Sources */,
 				A4512BF6288113350054054E /* App.swift in Sources */,
 				A4BFBD5628826A58002E23A7 /* University.swift in Sources */,
 				A4BFBD6428827D50002E23A7 /* JSONLoader.swift in Sources */,
@@ -382,7 +390,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.khatun.COSC2659-Assignment1-s3877347";
-				PRODUCT_NAME = "Universities in Vietnam";
+				PRODUCT_NAME = "Uni in VN";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
