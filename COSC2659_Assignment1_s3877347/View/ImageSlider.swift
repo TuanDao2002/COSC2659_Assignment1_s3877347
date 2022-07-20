@@ -10,7 +10,12 @@ import SwiftUI
 struct ImageSlider: View {
     let images: [String];
     var body: some View {
-        List {
+//        NavigationView {
+//            List {
+//
+//            }
+//        }
+        Group {
             TabView {
                 ForEach(images, id: \.self) { imageName in
                     VStack {
@@ -21,9 +26,8 @@ struct ImageSlider: View {
                 }
             }
             .tabViewStyle(PageTabViewStyle())
-            .frame(height: 300)
+            .frame(height: 200)
             .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
-
         }
     }
 }

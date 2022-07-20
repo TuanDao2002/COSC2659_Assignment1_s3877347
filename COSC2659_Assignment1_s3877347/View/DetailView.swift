@@ -25,7 +25,7 @@ struct DetailView: View {
                     CircleImage(image: data.image)
                         .offset(y: -90)
                         .padding(.bottom, -90)
-
+                    
                     VStack(alignment: .leading) {
                         Text(data.name)
                             .fixedSize(horizontal: false, vertical: true)
@@ -50,6 +50,12 @@ struct DetailView: View {
                         Text(data.description)
                             .font(.system(size: 20))
                             .multilineTextAlignment(.leading)
+                        
+                        Text("\nSome images of the university")
+                            .fixedSize(horizontal: false, vertical: true)
+                            .font(.system( size: 20, weight: .medium))
+                        
+                        ImageSlider(images: data.imageSlides)
                     }
                     .padding()
                 }
