@@ -15,8 +15,15 @@ import SwiftUI
 struct DetailView: View {
     var data: University
     
+    var rounded: String {
+        if data.annualTuitionFee.remainder(dividingBy: 10) == 0 {
+            return String(format: "%.0f", data.annualTuitionFee)
+        } else {
+            return String(format: "%.3f", data.annualTuitionFee)
+        }
+    }
+    
     var body: some View {
-        let rounded = String(format: "%.3f", data.annualTuitionFee)
         ScrollView {
                 VStack {
                     MapView(name: data.name, latitude: data.latitude, longitude: data.longitude)
