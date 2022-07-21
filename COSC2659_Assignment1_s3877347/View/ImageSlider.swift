@@ -34,6 +34,6 @@ struct ImageSlider: View {
 
 struct ImageSlider_Previews: PreviewProvider {
     static var previews: some View {
-        ImageSlider(images: ["Melbourne Theatre", "bku_logo"])
+        ImageSlider(images: ["Melbourne Theatre"])
     }
 }

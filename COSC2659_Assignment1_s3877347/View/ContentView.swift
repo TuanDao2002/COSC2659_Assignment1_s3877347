@@ -26,8 +26,12 @@ extension View {
 struct ContentView: View {
     @EnvironmentObject var universityVM: UniversityViewModel
     @State private var queryString = ""
+    
     @State private var selection = "name"
-    let options = ["name", "address", "fee"]
+    let options = ["name", "address"]
+    
+    @State private var fee = "Any"
+    let feeRange = ["Any", "< 10M","10M to 50M", "> 50M"]
     
     var filteredUni: [University] {
         if queryString.isEmpty {
@@ -42,8 +46,6 @@ struct ContentView: View {
             return "Keyword for name"
         } else if selection == "address" {
             return "Key word for address"
-        } else if selection == "fee" {
-            return "Max tuition fee (millions VND/year)"
         } else {
             return "Enter keyword"
         }
@@ -51,7 +53,7 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            VStack {
+            VStack(spacing: 10) {
                 Text("Filter by")
                     .font(.subheadline)
                 Picker("filter option", selection: $selection) {
@@ -62,13 +64,24 @@ struct ContentView: View {
                 .padding(.horizontal, 5)
                 .pickerStyle(.segmented)
                 
+                Text("Annual tuition fee range:")
+                    .font(.subheadline)
+                Picker("fee range", selection: $fee) {
+                    ForEach(feeRange, id: \.self) {
+                        Text("\($0)")
+                    }
+                }
+                .padding(.horizontal, 5)
+                .pickerStyle(.segmented)
+
                 List(filteredUni, id: \.id) { object in
                     UniversityRow(object: object)
                 }
+                .listStyle(.plain)
                 .searchable(text: $queryString, prompt: prompText) {
                     ForEach(filteredUni, id: \.id) { result in
                         if selection == "name" {
-                            Text("\(result.name)").searchCompletion(result.name)
+                            Text(result.name).searchCompletion(result.name)
                         }
                     }
                 }
