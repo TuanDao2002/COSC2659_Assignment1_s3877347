@@ -23,9 +23,9 @@ final class UniversityViewModel: ObservableObject {
         self.data = Bundle.main.loadJSONFrom("universityData.json")
     }
     
-    func filter(searchText: String, option: String) -> [University] {
+    func filter(searchText: String, option: String, feeRange: String) -> [University] {
+        var matchingUniversities: [University] = []
         if searchText.count >= 1 {
-            var matchingUniversities: [University] = []
             for university in data {
                 var content = ""
                 if option == "name" {
@@ -34,24 +34,23 @@ final class UniversityViewModel: ObservableObject {
                     content = university.address
                 }
                 
-                if option == "fee" {
-                    if let fee = Double(searchText) {
-                        if university.annualTuitionFee <= fee {
-                            matchingUniversities.append(university)
-                            continue
-                        }
-                    } else {
-                        return data
-                    }
-                }
                 if content.lowercased().contains(searchText.lowercased()) {
                     matchingUniversities.append(university)
                 }
             }
             
-            return matchingUniversities
         } else {
-            return data
+            matchingUniversities = data
         }
+        
+        if feeRange == "< 10M" {
+            matchingUniversities = matchingUniversities.filter{$0.annualTuitionFee < 10}
+        } else if feeRange == "10M to 50M" {
+            matchingUniversities = matchingUniversities.filter{$0.annualTuitionFee >= 10 && $0.annualTuitionFee <= 50}
+        } else if feeRange == "> 50M" {
+            matchingUniversities = matchingUniversities.filter{$0.annualTuitionFee > 50}
+        }
+        
+        return matchingUniversities
     }
 }

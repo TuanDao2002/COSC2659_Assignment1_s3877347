@@ -45,8 +45,12 @@ struct DetailView: View {
                             Divider()
                                 .frame(width: 0.5)
                                 .overlay(.black)
-                            Text("Annual tuition fee: \(rounded)M VND")
-                                .font(.subheadline)
+                            
+                            VStack(alignment: .leading) {
+                                Text("Annual tuition fee:")
+                                    .font(.subheadline)
+                                Text(">= \(rounded)M VND")
+                            }
                         }
                         .font(.subheadline)
                         .foregroundColor(.secondary)

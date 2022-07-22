@@ -33,12 +33,10 @@ struct ContentView: View {
     @State private var fee = "Any"
     let feeRange = ["Any", "< 10M","10M to 50M", "> 50M"]
     
-    var filteredUni: [University] {
-        if queryString.isEmpty {
-            return universityVM.data
-        } else {
-            return universityVM.filter(searchText: queryString, option: selection)
-        }
+    @State private var filteredUni: [University] = []
+    
+    func filter() {
+        filteredUni = universityVM.filter(searchText: queryString, option: selection, feeRange: fee)
     }
     
     var prompText: String {
@@ -61,6 +59,9 @@ struct ContentView: View {
                         Text("\($0)")
                     }
                 }
+                .onChange(of: selection) { value in
+                    filter()
+                }
                 .padding(.horizontal, 5)
                 .pickerStyle(.segmented)
                 
@@ -70,6 +71,9 @@ struct ContentView: View {
                     ForEach(feeRange, id: \.self) {
                         Text("\($0)")
                     }
+                }
+                .onChange(of: fee) { value in
+                    filter()
                 }
                 .padding(.horizontal, 5)
                 .pickerStyle(.segmented)
@@ -84,6 +88,12 @@ struct ContentView: View {
                             Text(result.name).searchCompletion(result.name)
                         }
                     }
+                }
+                .onAppear {
+                    filter()
+                }
+                .onChange(of: queryString) { value in
+                    filter()
                 }
                 .navigationTitle("🏫 in Vietnam")
             }
