@@ -49,5 +49,18 @@
         "imageSlides": ["BKU - Thu Duc Campus", "BKU - Theatre", "BKU library", "BKU Computer Lab", "BKU Canteen"],
         "latitude": 10.884260764058707,
         "longitude": 106.80640580021782
-    }
+    },
+    
+    {
+        "id": 5,
+        "name": "Ho Chi Minh City University of Science",
+        "title": "VNU - HCM",
+        "imageName": "VNUHCM_logo",
+        "address": "227 Nguyen Van Cu, Ward 4, District 5, Ho Chi Minh City",
+        "annualTuitionFee": 21.5,
+        "description": "VNUHCM-University of Science (VNUHCM-US; formerly known as University of Sciences) has offered various scientific degrees across Southern Vietnam since its establishment as the Indochina College of Science in 1941.\n\nDue to some internal reforms, at the beginning of 1996, the Faculty of Science became the University of Natural Sciences - one of the five affiliated universities of the Vietnam National University Ho Chi Minh City. In 2007, the University was officially renamed as the University of Science. Since 2007, VNUHCM – US has been a public university playing an important role in offering education and scientific research within the VNUHCM system.\n\nThe two joint bachelor programs include Bachelor of Computer & Information Sciences with a major in IT Service Science collaborated with Auckland University of Technology, New Zealand; Bachelor of Science in Management collaborated with a major in International Business collaborated with Keuka College, USA.\n\nThe university provides several education professions: Biology, Chemistry, Electronic & Communications, Environment, Geology, Information Technology, Math & Computer Science, Materials Science, Oceanography, Physics.",
+        "imageSlides": ["VNUHCM - HCM Campus", "BKU - Theatre", "BKU library", "BKU Computer Lab", "BKU Canteen"],
+        "latitude": 10.762913,
+        "longitude": 106.6821717
+    },
 ]
