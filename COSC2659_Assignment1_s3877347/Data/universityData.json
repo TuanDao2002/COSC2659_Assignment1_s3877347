@@ -46,7 +46,7 @@
         "address": "VRH4+XG4, Linh Trung Ward, Thu Duc District, Ho Chi Minh City",
         "annualTuitionFee": 30,
         "description": "The Ho Chi Minh City University of Technology is a key member university of Vietnam National University, Ho Chi Minh City and is the flagship university in technology teaching and research activities in Vietnam.\n\nThe HCMUT is an institution that offers training in technology, industry, and management in the health care industry. At the end of May 2005, HCMUT had 11 faculties, 14 research and development (R&D) centers, 4 training centers, 10 functional offices, as well as one joint-stock company. During the past 40 years since Vietnam's unification, 60,000 Engineers and Bachelors have graduated from HCMUT. Until now, HCMUT has trained more than 60,000 engineers and bachelors, over 10,000 masters and 200 doctors from all over the world.",
-        "imageSlides": ["BKU - Thu Duc Campus", "BKU - Theatre", "BKU library", "BKU Computer Lab", "BKU Canteen"],
+        "imageSlides": ["BKU - Thu Duc Campus", "BKU Theatre", "BKU library", "BKU Computer Lab", "BKU Canteen"],
         "latitude": 10.884260764058707,
         "longitude": 106.80640580021782
     },
@@ -59,8 +59,34 @@
         "address": "227 Nguyen Van Cu, Ward 4, District 5, Ho Chi Minh City",
         "annualTuitionFee": 21.5,
         "description": "VNUHCM-University of Science (VNUHCM-US; formerly known as University of Sciences) has offered various scientific degrees across Southern Vietnam since its establishment as the Indochina College of Science in 1941.\n\nDue to some internal reforms, at the beginning of 1996, the Faculty of Science became the University of Natural Sciences - one of the five affiliated universities of the Vietnam National University Ho Chi Minh City. In 2007, the University was officially renamed as the University of Science. Since 2007, VNUHCM – US has been a public university playing an important role in offering education and scientific research within the VNUHCM system.\n\nThe two joint bachelor programs include Bachelor of Computer & Information Sciences with a major in IT Service Science collaborated with Auckland University of Technology, New Zealand; Bachelor of Science in Management collaborated with a major in International Business collaborated with Keuka College, USA.\n\nThe university provides several education professions: Biology, Chemistry, Electronic & Communications, Environment, Geology, Information Technology, Math & Computer Science, Materials Science, Oceanography, Physics.",
-        "imageSlides": ["VNUHCM - HCM Campus", "BKU - Theatre", "BKU library", "BKU Computer Lab", "BKU Canteen"],
-        "latitude": 10.762913,
-        "longitude": 106.6821717
+        "imageSlides": ["VNUHCM - HCM Campus", "VNUHCM Theatre", "VNUHCM Library", "VNUHCM Computer Lab", "VNUHCM Canteen"],
+        "latitude": 10.76299731310828,
+        "longitude": 106.68215023931619
+    },
+    
+    {
+        "id": 6,
+        "name": "The University of Social Sciences and Humanities",
+        "title": "USSH",
+        "imageName": "USSH_logo",
+        "address": "10-12 Dinh Tien Hoang, Ben Nghe Ward, District 1, Ho Chi Minh City",
+        "annualTuitionFee": 13,
+        "description": "The University of Social Sciences and Humanities, Vietnam National University of Ho Chi Minh City (abbreviation: USSH, VNU - HCM) is one of the member universities of Vietnam National University, Ho Chi Minh City (VNU - HCM), which holds the 158th position in the QS University Rankings for Asia (QC 2021). VNU - HCM is also ranked in top 101-150 on QS Top Under 50 (QS 2021), in top 301 - 500 among the 786 higher education institutions from 78 countries by QS GER 2022, in top 601 - 800 on World's Universities for Social Sciences (THE 2022) and in top 193 of the world on the QS Graduate Employability Ranking (QS GER 2022).\n\nUSSH, VNU - HCM was formerly known as the College of Letters, University of Saigon, The University of Ho Chi Minh City. It is now the biggest research and training center in the field of social sciences and humanities in the South of Vietnam.\n\nIn October 2021, USSH, VNU - HCM officially claimed their autonomy in the development strategy.",
+        "imageSlides": ["USSH - HCM Campus", "USSH Theatre", "USSH Library", "USSH Canteen"],
+        "latitude": 10.78651413554716,
+        "longitude": 106.7027086
+    },
+    
+    {
+        "id": 7,
+        "name": "Ho Chi Minh City International University",
+        "title": "IU",
+        "imageName": "IU_logo",
+        "address": "Quarter 6, Thu Duc City, Ho Chi Minh City",
+        "annualTuitionFee": 50,
+        "description": "VNUHCM - International University (Ho Chi Minh City International University) is the first and unique English-medium public research university in Vietnam. Established in 2003, it is now becoming as one of the leading research powerhouse in Vietnam. The university is affiliated to the Vietnam National University, Ho Chi Minh City (VNU-HCM).\n\nThe university conducts all its administrative, academic, and research activities in Thu Duc university village, a 77 hectare joint land endowment between Ho Chi Minh City and Binh Duong Province. It is home to Regional Centre of Expertise on Education for Sustainable Development, a non-profit organisation that works closely with the United Nations and other 136 RCEs to incorporate sustainable development into education.\n\nThe teaching is conducted in English. In addition to entrance exams, students also have to write an English language test or obtain TOEFL, TOEIC, IELTS or equivalent English certificate as required by HCMIU and its cooperative universities.\n\nBesides offering undergraduate and postgraduate degree programs in business studies and engineering, HCMIU also offers a number of other courses related to the two fields.",
+        "imageSlides": ["IU - Thu Duc Campus", "IU Theatre", "IU Library", "IU Computer Lab", "IU Canteen"],
+        "latitude": 10.87794302605361,
+        "longitude": 106.80149085396778
     },
 ]
