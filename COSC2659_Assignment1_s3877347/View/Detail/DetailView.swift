@@ -13,33 +13,33 @@
 import SwiftUI
 
 struct DetailView: View {
-    var data: University
+    var uni: University
     
     var rounded: String {
-        if data.annualTuitionFee.remainder(dividingBy: 10) == 0 {
-            return String(format: "%.0f", data.annualTuitionFee)
+        if uni.annualTuitionFee.remainder(dividingBy: 10) == 0 {
+            return String(format: "%.0f", uni.annualTuitionFee)
         } else {
-            return String(format: "%.3f", data.annualTuitionFee)
+            return String(format: "%.3f", uni.annualTuitionFee)
         }
     }
     
     var body: some View {
         ScrollView {
                 VStack {
-                    MapView(name: data.name, latitude: data.latitude, longitude: data.longitude)
+                    MapView(name: uni.name, latitude: uni.latitude, longitude: uni.longitude)
                         .frame(height: 300)
 
-                    CircleImage(image: data.image)
+                    CircleImage(imageName: uni.imageName)
                         .offset(y: -90)
                         .padding(.bottom, -90)
                     
                     VStack(alignment: .leading) {
-                        Text(data.name)
+                        Text(uni.name)
                             .fixedSize(horizontal: false, vertical: true)
                             .font(.title)
 
                         HStack (alignment: .top) {
-                            Text("Address: \(data.address)")
+                            Text("Address: \(uni.address)")
                                 .font(.subheadline)
                             Spacer()
                             Divider()
@@ -55,10 +55,10 @@ struct DetailView: View {
                         .font(.subheadline)
                         .foregroundColor(.secondary)
 
-                        Text("About \(data.name)")
+                        Text("About \(uni.name)")
                             .fixedSize(horizontal: false, vertical: true)
                             .font(.system( size: 20, weight: .medium))
-                        Text(data.description)
+                        Text(uni.description)
                             .font(.system(size: 20))
                             .multilineTextAlignment(.leading)
                         
@@ -66,7 +66,7 @@ struct DetailView: View {
                             .fixedSize(horizontal: false, vertical: true)
                             .font(.system( size: 20, weight: .medium))
                         
-                        ImageSlider(images: data.imageSlides)
+                        ImageSlider(images: uni.imageSlides)
                     }
                     .padding()
                 }
@@ -75,7 +75,7 @@ struct DetailView: View {
         .toolbar {
             ToolbarItem(placement: .principal) {
                 VStack {
-                    Text(data.title)
+                    Text(uni.title)
                         .font(.title)
                         .padding(8)
                 }
@@ -86,6 +86,6 @@ struct DetailView: View {
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView(data: UniversityViewModel().data[0])
+        DetailView(uni: UniversityViewModel().data[0])
     }
 }

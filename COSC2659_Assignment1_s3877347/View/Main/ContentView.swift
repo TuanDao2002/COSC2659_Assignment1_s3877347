@@ -78,8 +78,8 @@ struct ContentView: View {
                 .padding(.horizontal, 5)
                 .pickerStyle(.segmented)
 
-                List(filteredUni, id: \.id) { object in
-                    UniversityRow(object: object)
+                List(filteredUni, id: \.id) { uni in
+                    UniversityRow(uni: uni)
                 }
                 .listStyle(.plain)
                 .searchable(text: $queryString, prompt: prompText) {

@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct UniversityRow: View {
-    var object: University
+    var uni: University
     var body: some View {
         HStack {
-            Image(object.image)
+            Image(uni.imageName)
                 .resizable()
                 .scaledToFit()
                 .frame(height: 50)
-            NavigationLink(object.name, destination: DetailView(data: object))
+            NavigationLink(uni.name, destination: DetailView(uni: uni))
                 .font(.system(size: 20))
                 .padding(8)
                 .minimumScaleFactor(0.01)
@@ -25,6 +25,6 @@ struct UniversityRow: View {
 
 struct UniversityRow_Previews: PreviewProvider {
     static var previews: some View {
-        UniversityRow(object: UniversityViewModel().data[0])
+        UniversityRow(uni: UniversityViewModel().data[0])
     }
 }
