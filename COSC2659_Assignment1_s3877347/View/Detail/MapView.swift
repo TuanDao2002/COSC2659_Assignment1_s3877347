@@ -13,6 +13,7 @@
 import SwiftUI
 import MapKit
 
+// a view to display university's location on a map
 struct MapView: View {
     var name: String
     var latitude: Double
@@ -20,7 +21,7 @@ struct MapView: View {
     
     @State private var region: MKCoordinateRegion
     
-    struct Place: Identifiable {
+    struct Place: Identifiable { // a struct used for MapMarker to mark the university's location
         let id = UUID()
         let name: String
         let coordinate: CLLocationCoordinate2D
@@ -43,6 +44,7 @@ struct MapView: View {
     }
     
     var body: some View {
+        // use the coordination of the university to location it with a map that can be moved, zoom and has a marker to mark the university's location
         Map(coordinateRegion: $region, interactionModes: [.zoom, .pan], annotationItems: annotations) {
             MapMarker(coordinate: $0.coordinate)
         }

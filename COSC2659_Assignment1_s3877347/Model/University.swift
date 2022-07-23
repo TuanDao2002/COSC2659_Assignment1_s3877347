@@ -13,6 +13,7 @@
 import UIKit
 import SwiftUI
 
+// the model for each university
 class University: Identifiable, Decodable {
     var id: Int
     var imageName: String

@@ -13,32 +13,28 @@
 import SwiftUI
 import MapKit
 
-extension View {
-    @ViewBuilder func phoneOnlyStackNavigationView() -> some View {
-        if UIDevice.current.userInterfaceIdiom == .phone {
-            self.navigationViewStyle(.stack)
-        } else if UIDevice.current.userInterfaceIdiom == .pad {
-            self.navigationViewStyle(.stack)
-        }
-    }
-}
-
 struct ContentView: View {
+    // universityVM is used to filter the data based on user inputs
     @EnvironmentObject var universityVM: UniversityViewModel
+    
+    // a state variable to store the user text input
     @State private var queryString = ""
     
+    // a state variable to store the user's option to filter
     @State private var selection = "name"
     let options = ["name", "address"]
     
+    // a state variable to store the fee range user wants to filter
     @State private var fee = "Any"
     let feeRange = ["Any", "< 10M","10M to 50M", "> 50M"]
     
+    // a state variable to store the data that was filtered
     @State private var filteredUni: [University] = []
-    
     func filter() {
         filteredUni = universityVM.filter(searchText: queryString, option: selection, feeRange: fee)
     }
     
+    // the variable to display the prompt text in input text field
     var prompText: String {
         if selection == "name" {
             return "Keyword for name"
@@ -52,6 +48,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack(spacing: 10) {
+                // display the picker to choose the option to filter (name or address)
                 Text("Filter by")
                     .font(.subheadline)
                 Picker("filter option", selection: $selection) {
@@ -65,6 +62,7 @@ struct ContentView: View {
                 .padding(.horizontal, 5)
                 .pickerStyle(.segmented)
                 
+                // display the picker to choose the fee range to filter
                 Text("Annual tuition fee range:")
                     .font(.subheadline)
                 Picker("fee range", selection: $fee) {
@@ -78,28 +76,33 @@ struct ContentView: View {
                 .padding(.horizontal, 5)
                 .pickerStyle(.segmented)
 
+                // display the filtered universities in form of a List
                 List(filteredUni, id: \.id) { uni in
                     UniversityRow(uni: uni)
                 }
                 .listStyle(.plain)
+                
+                // use .searchable to display a searchbar for the list of universities
                 .searchable(text: $queryString, prompt: prompText) {
                     ForEach(filteredUni, id: \.id) { result in
+                        // help user to auto-complete while searching university by name
                         if selection == "name" {
                             Text(result.name).searchCompletion(result.name)
                         }
                     }
                 }
+                // filter the data when the search first appears
                 .onAppear {
                     filter()
                 }
+                // filter the data when user type some string to the search bar
                 .onChange(of: queryString) { value in
                     filter()
                 }
+                // title of the list
                 .navigationTitle("🏫 in Vietnam")
             }
         }
-
-        .phoneOnlyStackNavigationView()
     }
 }
 

@@ -13,6 +13,7 @@ import SwiftUI
 
 @main
 struct COSC2659_Assignment1_s3877347App: App {
+    // use the environmentObject to share the data of UniversityViewModel object between views
     var universityVM = UniversityViewModel()
     var body: some Scene {
         WindowGroup {

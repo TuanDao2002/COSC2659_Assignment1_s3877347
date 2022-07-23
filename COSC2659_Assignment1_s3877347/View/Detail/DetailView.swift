@@ -12,9 +12,11 @@
 
 import SwiftUI
 
+// the View to display the detail information of a university
 struct DetailView: View {
     var uni: University
     
+    // rounding the Double number of annual tuition fee
     var rounded: String {
         if uni.annualTuitionFee.remainder(dividingBy: 10) == 0 {
             return String(format: "%.0f", uni.annualTuitionFee)
@@ -26,13 +28,16 @@ struct DetailView: View {
     var body: some View {
         ScrollView {
                 VStack {
+                    // display the location of university on a map
                     MapView(name: uni.name, latitude: uni.latitude, longitude: uni.longitude)
                         .frame(height: 300)
 
+                    // display the logo of university with a circle image
                     CircleImage(imageName: uni.imageName)
                         .offset(y: -90)
                         .padding(.bottom, -90)
                     
+                    // display the universit's name, address, annual tuition fee, description
                     VStack(alignment: .leading) {
                         Text(uni.name)
                             .fixedSize(horizontal: false, vertical: true)
@@ -66,13 +71,14 @@ struct DetailView: View {
                             .fixedSize(horizontal: false, vertical: true)
                             .font(.system( size: 20, weight: .medium))
                         
+                        // display a slider showing some images of the university
                         ImageSlider(images: uni.imageSlides)
                     }
                     .padding()
                 }
         }
         .navigationBarTitleDisplayMode(.inline)
-        .toolbar {
+        .toolbar { // custom the navigation title of Detail View to display univeristy's title
             ToolbarItem(placement: .principal) {
                 VStack {
                     Text(uni.title)

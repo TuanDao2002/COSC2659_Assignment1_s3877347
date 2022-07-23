@@ -12,15 +12,16 @@
 
 import SwiftUI
 
+// a View to display logo in circle
 struct CircleImage: View {
     var imageName: String
     var body: some View {
         Image(imageName)
             .resizable()
-            .clipShape(Circle())
-            .frame(width: 200.0, height: 200.0)
-            .overlay(Circle().stroke(Color.white,lineWidth:4)
-            .shadow(radius: 10))
+            .clipShape(Circle()) // put the image in circle
+            .frame(width: 200.0, height: 200.0) // set the width and height of image
+            .overlay(Circle().stroke(Color.white, lineWidth: 4) // set a white border around image
+            .shadow(radius: 10)) //set the shadow around image
     }
 }
 
