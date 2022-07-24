@@ -13,7 +13,7 @@
 
 import SwiftUI
 
-// a view the display overlay of an image
+// a view to display overlay of an image
 struct ImageOverlay: View {
     var imageName: String
     var body: some View {
