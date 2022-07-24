@@ -43,12 +43,12 @@
         "name": "Ho Chi Minh City University of Technology",
         "title": "BKU",
         "imageName": "bku_logo",
-        "address": "VRH4+XG4, Linh Trung Ward, Thu Duc District, Ho Chi Minh City",
+        "address": "VRJ4+65C, Dong Hoa, Di An, Binh Dương",
         "annualTuitionFee": 30,
         "description": "The Ho Chi Minh City University of Technology is a key member university of Vietnam National University, Ho Chi Minh City and is the flagship university in technology teaching and research activities in Vietnam.\n\nThe HCMUT is an institution that offers training in technology, industry, and management in the health care industry. At the end of May 2005, HCMUT had 11 faculties, 14 research and development (R&D) centers, 4 training centers, 10 functional offices, as well as one joint-stock company. During the past 40 years since Vietnam's unification, 60,000 Engineers and Bachelors have graduated from HCMUT. Until now, HCMUT has trained more than 60,000 engineers and bachelors, over 10,000 masters and 200 doctors from all over the world.",
         "imageSlides": ["BKU - Thu Duc Campus", "BKU Theatre", "BKU library", "BKU Computer Lab", "BKU Canteen"],
-        "latitude": 10.884260764058707,
-        "longitude": 106.80640580021782
+        "latitude": 10.8806429587982,
+        "longitude": 106.80541959391094,
     },
     
     {
@@ -82,11 +82,24 @@
         "name": "Ho Chi Minh City International University",
         "title": "IU",
         "imageName": "IU_logo",
-        "address": "Quarter 6, Thu Duc City, Ho Chi Minh City",
+        "address": "Quarter 6, Thu Duc, Ho Chi Minh City",
         "annualTuitionFee": 50,
         "description": "VNUHCM - International University (Ho Chi Minh City International University) is the first and unique English-medium public research university in Vietnam. Established in 2003, it is now becoming as one of the leading research powerhouse in Vietnam. The university is affiliated to the Vietnam National University, Ho Chi Minh City (VNU-HCM).\n\nThe university conducts all its administrative, academic, and research activities in Thu Duc university village, a 77 hectare joint land endowment between Ho Chi Minh City and Binh Duong Province. It is home to Regional Centre of Expertise on Education for Sustainable Development, a non-profit organisation that works closely with the United Nations and other 136 RCEs to incorporate sustainable development into education.\n\nThe teaching is conducted in English. In addition to entrance exams, students also have to write an English language test or obtain TOEFL, TOEIC, IELTS or equivalent English certificate as required by HCMIU and its cooperative universities.\n\nBesides offering undergraduate and postgraduate degree programs in business studies and engineering, HCMIU also offers a number of other courses related to the two fields.",
         "imageSlides": ["IU - Thu Duc Campus", "IU Theatre", "IU Library", "IU Computer Lab", "IU Canteen"],
         "latitude": 10.87794302605361,
         "longitude": 106.80149085396778
     },
+    
+    {
+        "id": 8,
+        "name": "University of Information Technology",
+        "title": "UIT",
+        "imageName": "UIT_logo",
+        "address": "Han Thuyen Street, Quarter 6, Thu Duc, Ho Chi Minh City",
+        "annualTuitionFee": 30,
+        "description": "VNUHCM - University of Information Technology (UIT) is the public university that was founded under the Decision No.134/2006/QD-TTg dated on June 8, 2006 by the Vietnam’s Prime Minister. It offers prestigious programs in Information and Communication Technology (ICT). As the university member of Vietnam National University of Ho Chi Minh City (VNUHCM), UIT takes charge of training high-ranked labor force in information technology (IT), who are to contribute to the development of Vietnam's IT industry. Meanwhile, it conducts scientific researches and transfers advanced IT. Especially, its focal point is the application which aims at promoting the country’s industrialization and modernization.\n\nAfter over 10 years of founding and development, its facilities include modern and well-equipped areas for studying, researching and working that have been invested tremendously with over 14 hectares in total and within the VNU-HCM zone.\n\nThe majority of its lecturers with graduate degrees has been its core labor at UIT. They contribute to the production and transfer of knowledge. Besides, UIT’s professional managers, working with all of their sincerity, proficiency are assessed as the important workforce to navigate the UIT’s success. The number of lecturers who possesses the graduate degree in ICT sector takes up 93% of the total full-time tenure track lecturers. UIT has 01 Professor, 05 Associate Professors, 45 PhD and 140 Master lecturers. They are alumni from prestigious universities, institutes in the developed countries in the world.",
+        "imageSlides": ["UIT - Thu Duc Campus", "UIT Theatre", "UIT Library", "UIT Computer Lab", "UIT Canteen"],
+        "latitude": 10.870493570986268,
+        "longitude": 106.80331159206442
+    }
 ]
