@@ -49,10 +49,10 @@ final class UniversityViewModel: ObservableObject {
         }
         
         // filter the universities by a different ranges of annual tuition fee base on user's choice
-        if feeRange == "< 10M" {
-            matchingUniversities = matchingUniversities.filter{$0.annualTuitionFee < 10}
-        } else if feeRange == "10M to 50M" {
-            matchingUniversities = matchingUniversities.filter{$0.annualTuitionFee >= 10 && $0.annualTuitionFee <= 50}
+        if feeRange == "< 20M" {
+            matchingUniversities = matchingUniversities.filter{$0.annualTuitionFee < 20}
+        } else if feeRange == "20M to 50M" {
+            matchingUniversities = matchingUniversities.filter{$0.annualTuitionFee >= 20 && $0.annualTuitionFee <= 50}
         } else if feeRange == "> 50M" {
             matchingUniversities = matchingUniversities.filter{$0.annualTuitionFee > 50}
         }

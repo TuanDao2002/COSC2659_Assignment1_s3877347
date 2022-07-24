@@ -26,7 +26,7 @@ struct ContentView: View {
     
     // a state variable to store the fee range user wants to filter
     @State private var fee = "Any"
-    let feeRange = ["Any", "< 10M","10M to 50M", "> 50M"]
+    let feeRange = ["Any", "< 20M","20M to 50M", "> 50M"]
     
     // a state variable to store the data that was filtered
     @State private var filteredUni: [University] = []

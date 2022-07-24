@@ -18,7 +18,7 @@
         "title": "UEH",
         "imageName": "ueh_logo",
         "address": "59C Nguyen Dinh Chieu, Ward 6, District 3, Ho Chi Minh City",
-        "annualTuitionFee": 5.324,
+        "annualTuitionFee": 24.800,
         "description": "University of Economics Ho Chi Minh City (UEH University) is a multidisciplinary university which was established in 1976 in Ho Chi Minh City, Vietnam. It is one of the National Key Universities of Vietnam and is a member of The Best 1,000 Business Schools in the World.\n\nFrom its inception until now, the school has been a renowned center of scientific research in Vietnam, providing undergraduate and postgraduate education for students from the country and neighboring Laos and Cambodia",
         "imageSlides": ["UEH - Campus A", "UEH Theatre", "UEH library", "UEH Computer Lab", "UEH Canteen"],
         "latitude": 10.78333219823242,
@@ -54,12 +54,12 @@
     {
         "id": 5,
         "name": "Ho Chi Minh City University of Science",
-        "title": "VNU - HCM",
-        "imageName": "VNUHCM_logo",
+        "title": "US",
+        "imageName": "US_logo",
         "address": "227 Nguyen Van Cu, Ward 4, District 5, Ho Chi Minh City",
         "annualTuitionFee": 21.5,
         "description": "VNUHCM-University of Science (VNUHCM-US; formerly known as University of Sciences) has offered various scientific degrees across Southern Vietnam since its establishment as the Indochina College of Science in 1941.\n\nDue to some internal reforms, at the beginning of 1996, the Faculty of Science became the University of Natural Sciences - one of the five affiliated universities of the Vietnam National University Ho Chi Minh City. In 2007, the University was officially renamed as the University of Science. Since 2007, VNUHCM – US has been a public university playing an important role in offering education and scientific research within the VNUHCM system.\n\nThe two joint bachelor programs include Bachelor of Computer & Information Sciences with a major in IT Service Science collaborated with Auckland University of Technology, New Zealand; Bachelor of Science in Management collaborated with a major in International Business collaborated with Keuka College, USA.\n\nThe university provides several education professions: Biology, Chemistry, Electronic & Communications, Environment, Geology, Information Technology, Math & Computer Science, Materials Science, Oceanography, Physics.",
-        "imageSlides": ["VNUHCM - HCM Campus", "VNUHCM Theatre", "VNUHCM Library", "VNUHCM Computer Lab", "VNUHCM Canteen"],
+        "imageSlides": ["US - HCM Campus", "US Theatre", "US Library", "US Computer Lab", "US Canteen"],
         "latitude": 10.76299731310828,
         "longitude": 106.68215023931619
     },
@@ -101,5 +101,31 @@
         "imageSlides": ["UIT - Thu Duc Campus", "UIT Theatre", "UIT Library", "UIT Computer Lab", "UIT Canteen"],
         "latitude": 10.870493570986268,
         "longitude": 106.80331159206442
+    },
+    
+    {
+        "id": 9,
+        "name": "University of Economics and Law",
+        "title": "UEL",
+        "imageName": "UEL_logo",
+        "address": "669 QL1A, Quarter 3, Thu Duc, Ho Chi Minh City",
+        "annualTuitionFee": 21.550,
+        "description": "VNUHCM-University of Economics and Law (VNUHCM-UEL) is a university in Linh Xuan ward, Thu Duc, Ho Chi Minh City, Vietnam. It is a member institution of university of Vietnam National University, Ho Chi Minh City (VNU-HCM). It was previously known as VNU-HCM Faculty of Economics (established in 2000) and was upgraded to university on March 24, 2010. To be able to meet the demands of socio-economic development in Vietnam as the industrialization, modernization, and global integration of Vietnam are on the rise, the University of Economics and Law has become a leading higher education institution and a center for scientific research and technology transfer of high quality in the fields of economics, law, and management.\n\nAs one of the renowned and well-known universities in Vietnam, the University of Economics and Law has a broad range of courses in business and law, including courses in finance, management, technology and marketing; international law, trade law, and securities law, among many other courses. There is a challenging and tough competitive admissions test for the university every year, and it is one of the most competitive in Vietnam. In terms of their knowledge of foreign languages, it is widely recognized that students from UEL are active, well-qualified, and comprehensive when it comes to their knowledge of foreign languages.",
+        "imageSlides": ["UEL - Thu Duc Campus", "UEL Theatre", "UEL Library", "UEL Computer Lab", "UEL Canteen"],
+        "latitude": 10.871163898548328,
+        "longitude": 106.77842696137628
+    },
+    
+    {
+        "id": 10,
+        "name": "FPT University",
+        "title": "FPT",
+        "imageName": "FPT_logo",
+        "address": "Lot E2a-7, D1 Street, High-Tech Zone, Long Thanh My Ward, District 9, Ho Chi Minh City",
+        "annualTuitionFee": 81.900,
+        "description": "FPT University is a private university in Vietnam. FPT University is a member of FPT Group and has campuses in Hanoi (main), Ho Chi Minh City, Da Nang, Can Tho and Quy Nhon (in progress).\n\nAll instructors are required to have two years' working experience in the IT industry, and have to sit for an entrance examination. Foreign language teaching would form an integral part of the curriculum, and they aim to recruit native-speaking foreign language teachers and subject area teachers who can deliver their lessons in English. After one year of language preparation, a foreign language would be used as the medium of instruction for all courses. English would not be the only such language used; the Vietnam Software Association are working with the school's embedded software faculty to establish a programme in Japanese.\n\nThe university runs a collaborative program with the University of Greenwich, England, the UK. The off-site Top-up +2, which began in August 2009, is a collaborative program between the University of Greenwich in the U.K. and FPT University in Vietnam and is currently the only program in Vietnam that awards Aptech graduates a U.K. bachelor's degree in one year.",
+        "imageSlides": ["FPT - HCM Campus", "FPT Theatre", "FPT Library", "FPT Computer Lab", "FPT Canteen"],
+        "latitude": 10.841654467180062,
+        "longitude": 106.80988299996561
     }
 ]
