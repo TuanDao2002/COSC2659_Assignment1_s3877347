@@ -39,10 +39,12 @@ struct DetailView: View {
                     
                     // display the universit's name, address, annual tuition fee, description
                     VStack(alignment: .leading) {
+                        // display name
                         Text(uni.name)
                             .fixedSize(horizontal: false, vertical: true)
                             .font(.title)
 
+                        // display address and annual tuition fee horizontally
                         HStack (alignment: .top) {
                             Text("Address: \(uni.address)")
                                 .font(.subheadline)
@@ -60,6 +62,7 @@ struct DetailView: View {
                         .font(.subheadline)
                         .foregroundColor(.secondary)
 
+                        // display description of the university
                         Text("About \(uni.name)")
                             .fixedSize(horizontal: false, vertical: true)
                             .font(.system( size: 20, weight: .medium))
@@ -67,14 +70,30 @@ struct DetailView: View {
                             .font(.system(size: 20))
                             .multilineTextAlignment(.leading)
                         
-                        Text("\nSome images of the university")
-                            .fixedSize(horizontal: false, vertical: true)
-                            .font(.system( size: 20, weight: .medium))
-                        
-                        // display a slider showing some images of the university
-                        ImageSlider(images: uni.imageSlides)
+                        // display a button to the website of the university
+                        VStack(alignment: .center) {
+                            Button(action: {
+                                if let url = URL(string: uni.link) {
+                                    UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                                }
+                            }) {
+                                Text("Link to \(uni.title)'s website")
+                                    .fontWeight(.bold)
+                                    .foregroundColor(.white)
+                            }
+                            .padding(10)
+                            .background(Color(red: 0, green: 0, blue: 0.5))
+                        }.frame(maxWidth: .infinity)
                     }
                     .padding()
+                    
+                    Text("Some images of the university")
+                        .fixedSize(horizontal: false, vertical: true)
+                        .font(.system(size: 20, weight: .medium))
+            
+                    // display a slider showing some images of the university
+                    ImageSlider(images: uni.imageSlides)
+
                 }
         }
         .navigationBarTitleDisplayMode(.inline)

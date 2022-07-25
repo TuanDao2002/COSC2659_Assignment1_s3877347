@@ -7,6 +7,7 @@
         "address": "702 Nguyen Van Linh, Tan Hung Ward, District 7, Ho Chi Minh City",
         "annualTuitionFee": 300.596,
         "description": "RMIT University Vietnam (informally RMIT Vietnam or RMIT) is the Vietnamese branch of the Australian research university the Royal Melbourne Institute of Technology, known in Australia as RMIT University. It has three campuses located in Ho Chi Minh City, Hanoi and Danang.\n\nRMIT was the first completely foreign-owned university granted permission to operate in Vietnam. Since its establishment in 2000, it has won 17 Golden Dragon Awards from the Vietnamese Government for excellence in education",
+        "link": "https://www.rmit.edu.vn/vi",
         "imageSlides": ["RMIT - SGS Campus", "Melbourne Theatre", "Beanland library", "RMIT Computer Lab", "RMIT Canteen"],
         "latitude": 10.729444,
         "longitude": 106.695278
@@ -20,6 +21,7 @@
         "address": "59C Nguyen Dinh Chieu, Ward 6, District 3, Ho Chi Minh City",
         "annualTuitionFee": 24.800,
         "description": "University of Economics Ho Chi Minh City (UEH University) is a multidisciplinary university which was established in 1976 in Ho Chi Minh City, Vietnam. It is one of the National Key Universities of Vietnam and is a member of The Best 1,000 Business Schools in the World.\n\nFrom its inception until now, the school has been a renowned center of scientific research in Vietnam, providing undergraduate and postgraduate education for students from the country and neighboring Laos and Cambodia",
+        "link": "https://www.ueh.edu.vn/",
         "imageSlides": ["UEH - Campus A", "UEH Theatre", "UEH library", "UEH Computer Lab", "UEH Canteen"],
         "latitude": 10.78333219823242,
         "longitude": 106.69474339698843
@@ -33,6 +35,7 @@
         "address": "91 Chua Lang, Lang Thuong Ward, Dong Da District, Ha Noi City",
         "annualTuitionFee": 20,
         "description": "Foreign Trade University (FTU) is a public university established in 1960, located in Hanoi, Vietnam with satellite campuses in Ho Chi Minh City and Quang Ninh.\n\nFTU is regarded as one of the most prestigious universities in Vietnam, offering a wide range of business courses - from economics, business administration, and finance to economic law and business languages. The annual admission to FTU is the most competitive in Vietnam and applicants are required to have very high test scores. The core major of the university is International Business Economics, which attracts the most elite students in the country. Students who graduated from FTU are recognized as being active and well-qualified.\n\nFTU offers both undergraduate and graduate programs for both local and foreign students. These courses are taught in Vietnamese, English, Japanese, Chinese and French.",
+        "link": "http://www.ftu.edu.vn/",
         "imageSlides": ["FTU - Hanoi Campus", "FTU Theatre", "FTU library", "FTU Canteen"],
         "latitude": 21.023033,
         "longitude": 105.805437
@@ -46,6 +49,7 @@
         "address": "VRJ4+65C, Dong Hoa, Di An, Binh Dương",
         "annualTuitionFee": 30,
         "description": "The Ho Chi Minh City University of Technology is a key member university of Vietnam National University, Ho Chi Minh City and is the flagship university in technology teaching and research activities in Vietnam.\n\nThe HCMUT is an institution that offers training in technology, industry, and management in the health care industry. At the end of May 2005, HCMUT had 11 faculties, 14 research and development (R&D) centers, 4 training centers, 10 functional offices, as well as one joint-stock company. During the past 40 years since Vietnam's unification, 60,000 Engineers and Bachelors have graduated from HCMUT. Until now, HCMUT has trained more than 60,000 engineers and bachelors, over 10,000 masters and 200 doctors from all over the world.",
+        "link": "https://www.hcmut.edu.vn/vi",
         "imageSlides": ["BKU - Thu Duc Campus", "BKU Theatre", "BKU library", "BKU Computer Lab", "BKU Canteen"],
         "latitude": 10.8806429587982,
         "longitude": 106.80541959391094,
@@ -59,6 +63,7 @@
         "address": "227 Nguyen Van Cu, Ward 4, District 5, Ho Chi Minh City",
         "annualTuitionFee": 21.5,
         "description": "VNUHCM-University of Science (VNUHCM-US; formerly known as University of Sciences) has offered various scientific degrees across Southern Vietnam since its establishment as the Indochina College of Science in 1941.\n\nDue to some internal reforms, at the beginning of 1996, the Faculty of Science became the University of Natural Sciences - one of the five affiliated universities of the Vietnam National University Ho Chi Minh City. In 2007, the University was officially renamed as the University of Science. Since 2007, VNUHCM – US has been a public university playing an important role in offering education and scientific research within the VNUHCM system.\n\nThe two joint bachelor programs include Bachelor of Computer & Information Sciences with a major in IT Service Science collaborated with Auckland University of Technology, New Zealand; Bachelor of Science in Management collaborated with a major in International Business collaborated with Keuka College, USA.\n\nThe university provides several education professions: Biology, Chemistry, Electronic & Communications, Environment, Geology, Information Technology, Math & Computer Science, Materials Science, Oceanography, Physics.",
+        "link": "https://www.hcmus.edu.vn/",
         "imageSlides": ["US - HCM Campus", "US Theatre", "US Library", "US Computer Lab", "US Canteen"],
         "latitude": 10.76299731310828,
         "longitude": 106.68215023931619
@@ -72,6 +77,7 @@
         "address": "10-12 Dinh Tien Hoang, Ben Nghe Ward, District 1, Ho Chi Minh City",
         "annualTuitionFee": 13,
         "description": "The University of Social Sciences and Humanities, Vietnam National University of Ho Chi Minh City (abbreviation: USSH, VNU - HCM) is one of the member universities of Vietnam National University, Ho Chi Minh City (VNU - HCM), which holds the 158th position in the QS University Rankings for Asia (QC 2021). VNU - HCM is also ranked in top 101-150 on QS Top Under 50 (QS 2021), in top 301 - 500 among the 786 higher education institutions from 78 countries by QS GER 2022, in top 601 - 800 on World's Universities for Social Sciences (THE 2022) and in top 193 of the world on the QS Graduate Employability Ranking (QS GER 2022).\n\nUSSH, VNU - HCM was formerly known as the College of Letters, University of Saigon, The University of Ho Chi Minh City. It is now the biggest research and training center in the field of social sciences and humanities in the South of Vietnam.\n\nIn October 2021, USSH, VNU - HCM officially claimed their autonomy in the development strategy.",
+        "link": "https://hcmussh.edu.vn/",
         "imageSlides": ["USSH - HCM Campus", "USSH Theatre", "USSH Library", "USSH Canteen"],
         "latitude": 10.78651413554716,
         "longitude": 106.7027086
@@ -85,6 +91,7 @@
         "address": "Quarter 6, Thu Duc, Ho Chi Minh City",
         "annualTuitionFee": 50,
         "description": "VNUHCM - International University (Ho Chi Minh City International University) is the first and unique English-medium public research university in Vietnam. Established in 2003, it is now becoming as one of the leading research powerhouse in Vietnam. The university is affiliated to the Vietnam National University, Ho Chi Minh City (VNU-HCM).\n\nThe university conducts all its administrative, academic, and research activities in Thu Duc university village, a 77 hectare joint land endowment between Ho Chi Minh City and Binh Duong Province. It is home to Regional Centre of Expertise on Education for Sustainable Development, a non-profit organisation that works closely with the United Nations and other 136 RCEs to incorporate sustainable development into education.\n\nThe teaching is conducted in English. In addition to entrance exams, students also have to write an English language test or obtain TOEFL, TOEIC, IELTS or equivalent English certificate as required by HCMIU and its cooperative universities.\n\nBesides offering undergraduate and postgraduate degree programs in business studies and engineering, HCMIU also offers a number of other courses related to the two fields.",
+        "link": "https://hcmiu.edu.vn/",
         "imageSlides": ["IU - Thu Duc Campus", "IU Theatre", "IU Library", "IU Computer Lab", "IU Canteen"],
         "latitude": 10.87794302605361,
         "longitude": 106.80149085396778
@@ -98,6 +105,7 @@
         "address": "Han Thuyen Street, Quarter 6, Thu Duc, Ho Chi Minh City",
         "annualTuitionFee": 30,
         "description": "VNUHCM - University of Information Technology (UIT) is the public university that was founded under the Decision No.134/2006/QD-TTg dated on June 8, 2006 by the Vietnam’s Prime Minister. It offers prestigious programs in Information and Communication Technology (ICT). As the university member of Vietnam National University of Ho Chi Minh City (VNUHCM), UIT takes charge of training high-ranked labor force in information technology (IT), who are to contribute to the development of Vietnam's IT industry. Meanwhile, it conducts scientific researches and transfers advanced IT. Especially, its focal point is the application which aims at promoting the country’s industrialization and modernization.\n\nAfter over 10 years of founding and development, its facilities include modern and well-equipped areas for studying, researching and working that have been invested tremendously with over 14 hectares in total and within the VNU-HCM zone.\n\nThe majority of its lecturers with graduate degrees has been its core labor at UIT. They contribute to the production and transfer of knowledge. Besides, UIT’s professional managers, working with all of their sincerity, proficiency are assessed as the important workforce to navigate the UIT’s success. The number of lecturers who possesses the graduate degree in ICT sector takes up 93% of the total full-time tenure track lecturers. UIT has 01 Professor, 05 Associate Professors, 45 PhD and 140 Master lecturers. They are alumni from prestigious universities, institutes in the developed countries in the world.",
+        "link": "https://www.uit.edu.vn/",
         "imageSlides": ["UIT - Thu Duc Campus", "UIT Theatre", "UIT Library", "UIT Computer Lab", "UIT Canteen"],
         "latitude": 10.870493570986268,
         "longitude": 106.80331159206442
@@ -111,6 +119,7 @@
         "address": "669 QL1A, Quarter 3, Thu Duc, Ho Chi Minh City",
         "annualTuitionFee": 21.550,
         "description": "VNUHCM-University of Economics and Law (VNUHCM-UEL) is a university in Linh Xuan ward, Thu Duc, Ho Chi Minh City, Vietnam. It is a member institution of university of Vietnam National University, Ho Chi Minh City (VNU-HCM). It was previously known as VNU-HCM Faculty of Economics (established in 2000) and was upgraded to university on March 24, 2010. To be able to meet the demands of socio-economic development in Vietnam as the industrialization, modernization, and global integration of Vietnam are on the rise, the University of Economics and Law has become a leading higher education institution and a center for scientific research and technology transfer of high quality in the fields of economics, law, and management.\n\nAs one of the renowned and well-known universities in Vietnam, the University of Economics and Law has a broad range of courses in business and law, including courses in finance, management, technology and marketing; international law, trade law, and securities law, among many other courses. There is a challenging and tough competitive admissions test for the university every year, and it is one of the most competitive in Vietnam. In terms of their knowledge of foreign languages, it is widely recognized that students from UEL are active, well-qualified, and comprehensive when it comes to their knowledge of foreign languages.",
+        "link": "https://www.uel.edu.vn/",
         "imageSlides": ["UEL - Thu Duc Campus", "UEL Theatre", "UEL Library", "UEL Computer Lab", "UEL Canteen"],
         "latitude": 10.871163898548328,
         "longitude": 106.77842696137628
@@ -124,6 +133,7 @@
         "address": "Lot E2a-7, D1 Street, High-Tech Zone, Long Thanh My Ward, District 9, Ho Chi Minh City",
         "annualTuitionFee": 81.900,
         "description": "FPT University is a private university in Vietnam. FPT University is a member of FPT Group and has campuses in Hanoi (main), Ho Chi Minh City, Da Nang, Can Tho and Quy Nhon (in progress).\n\nAll instructors are required to have two years' working experience in the IT industry, and have to sit for an entrance examination. Foreign language teaching would form an integral part of the curriculum, and they aim to recruit native-speaking foreign language teachers and subject area teachers who can deliver their lessons in English. After one year of language preparation, a foreign language would be used as the medium of instruction for all courses. English would not be the only such language used; the Vietnam Software Association are working with the school's embedded software faculty to establish a programme in Japanese.\n\nThe university runs a collaborative program with the University of Greenwich, England, the UK. The off-site Top-up +2, which began in August 2009, is a collaborative program between the University of Greenwich in the U.K. and FPT University in Vietnam and is currently the only program in Vietnam that awards Aptech graduates a U.K. bachelor's degree in one year.",
+        "link": "https://daihoc.fpt.edu.vn/",
         "imageSlides": ["FPT - HCM Campus", "FPT Theatre", "FPT Library", "FPT Computer Lab", "FPT Canteen"],
         "latitude": 10.841654467180062,
         "longitude": 106.80988299996561
