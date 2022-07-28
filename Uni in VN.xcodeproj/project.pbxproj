@@ -16,7 +16,6 @@
 		A4512BFD288113370054054E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4512BFC288113370054054E /* Preview Assets.xcassets */; };
 		A45F9CA52887B8F6008F5698 /* ImageSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45F9CA42887B8F6008F5698 /* ImageSlider.swift */; };
 		A45F9CA72887CB59008F5698 /* ImageOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45F9CA62887CB59008F5698 /* ImageOverlay.swift */; };
-		A46176AB288FF5C400FB5E40 /* document.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A46176AA288FF5C400FB5E40 /* document.pdf */; };
 		A4BFBD5628826A58002E23A7 /* University.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BFBD5528826A58002E23A7 /* University.swift */; };
 		A4BFBD5B28826F63002E23A7 /* universityData.json in Resources */ = {isa = PBXBuildFile; fileRef = A4BFBD5A28826F63002E23A7 /* universityData.json */; };
 		A4BFBD6428827D50002E23A7 /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BFBD6328827D50002E23A7 /* JSONLoader.swift */; };
@@ -35,7 +34,6 @@
 		A4512BFC288113370054054E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A45F9CA42887B8F6008F5698 /* ImageSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSlider.swift; sourceTree = "<group>"; };
 		A45F9CA62887CB59008F5698 /* ImageOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageOverlay.swift; sourceTree = "<group>"; };
-		A46176AA288FF5C400FB5E40 /* document.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = document.pdf; path = ../../../document.pdf; sourceTree = "<group>"; };
 		A46176AD288FF5FC00FB5E40 /* document.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = document.pdf; sourceTree = "<group>"; };
 		A4BFBD5528826A58002E23A7 /* University.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = University.swift; sourceTree = "<group>"; };
 		A4BFBD5A28826F63002E23A7 /* universityData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = universityData.json; sourceTree = "<group>"; };
@@ -90,7 +88,6 @@
 			isa = PBXGroup;
 			children = (
 				A4512BFC288113370054054E /* Preview Assets.xcassets */,
-				A46176AA288FF5C400FB5E40 /* document.pdf */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -219,7 +216,6 @@
 				A4BFBD5B28826F63002E23A7 /* universityData.json in Resources */,
 				A4512BFD288113370054054E /* Preview Assets.xcassets in Resources */,
 				A4512BFA288113370054054E /* Assets.xcassets in Resources */,
-				A46176AB288FF5C400FB5E40 /* document.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
